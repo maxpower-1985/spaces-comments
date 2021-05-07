@@ -1,0 +1,111 @@
+/*post-comment-section*/
+#post-comment-excerpt {
+	border-top: 1px solid #eee;
+	background-color: #eee;
+	padding-top: 14px;
+}
+
+.comment-excerpt {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+@media only screen and (max-width: 600px) {
+	.comment-excerpt {
+		flex-direction: column-reverse;
+	}
+}
+
+/*post-comment*/
+.excerpt-comment {
+	max-width: 100%;
+	width: 100%;
+	/*max-height: 90px;*/
+	background-color: rgb(232, 232, 232, 0.25);
+	border-left: 5px;
+	border-left-style: solid;
+	border-left-color: rgb(237, 98, 75);
+	border-radius: 5px;
+	margin: 10px 0px;
+	overflow: hidden;
+}
+
+.comment-content {
+	max-width: 100%;
+}
+
+/*post-comment-form*/
+.comment-respond {
+	padding: 14px 0px 0px 0px;
+	background: #eee;
+}
+
+#commentform {
+	background: #fff;
+}
+
+/*post-comment-excerpt*/
+#excerpt {
+	max-width: 100%;
+	background-color: #fff;
+	border-left: 5px;
+	border-left-style: solid;
+	border-left-color: rgb(237, 98, 75);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+	{
+	opacity: 0;
+}
+
+.comment-excerpt p {
+	/*white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: calc(100% - 10px);*/
+}
+
+.excerpt-container {
+	max-width: 100%;
+}
+
+.comment-excerpt-text {
+	padding-right: 10px;
+}
+
+.comment-excerpt-video {
+	max-width: 150px;
+	overflow: hidden;
+}
+
+.comment-excerpt-video img {
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.comment-excerpt-image {
+	max-width: 150px;
+	overflow: hidden;
+}
+
+.comment-excerpt-image img {
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+	.comment-excerpt-text {
+		padding-right: 0px;
+		padding-top: 10px;
+	}
+}
