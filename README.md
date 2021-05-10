@@ -1,5 +1,5 @@
 # spaces-comments
-Improve the post comments by adding replyTo and other useful features. Works best with the ckeditor and supports only the defaultspaces and child themes. 
+Improve the post comments by adding replyTo and other useful features, such as thumbnail support for Youtube Videos. Works best with the spaces-editor plug-in. Supports only the defaultspaces and child themes from THspaces.
 
 ![plot](spaces-comments.png)
 # Technical Details
