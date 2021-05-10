@@ -51,7 +51,6 @@ var defaults = {
 			},
 			{
 			// this will apply to `.png, jpg, gif, svg` files
-			//publicPath: '/app/themes/defaultspace/img/',
 				test: /\.(png|jpg|gif|svg)$/,
 				use: [
 					{
