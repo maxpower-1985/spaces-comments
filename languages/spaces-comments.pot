@@ -1,0 +1,82 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spaces Comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-10 07:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.1\n"
+"X-Domain: spaces-comments"
+
+#: spaces-comments.php:176
+msgid "Add a new comment"
+msgstr ""
+
+#: spaces-comments.php:171
+msgid "at"
+msgstr ""
+
+#: spaces-comments.php:177
+msgid "Comment has been deleted"
+msgstr ""
+
+#. Description of the plugin
+msgid "Create a new comment with reply-function."
+msgstr ""
+
+#: spaces-comments.php:169
+msgid "Delete comment"
+msgstr ""
+
+#: spaces-comments.php:166
+msgid "Do you really want to delete this comment?"
+msgstr ""
+
+#: spaces-comments.php:167
+msgid "Edit comment"
+msgstr ""
+
+#: spaces-comments.php:174
+msgid "Go to profile of"
+msgstr ""
+
+#: spaces-comments.php:173
+msgid "profile"
+msgstr ""
+
+#: spaces-comments.php:172
+msgid "Reply"
+msgstr ""
+
+#: spaces-comments.php:168
+msgid "Reply to comment"
+msgstr ""
+
+#: spaces-comments.php:175
+msgid "Show posts in this Space"
+msgstr ""
+
+#. Name of the plugin
+msgid "Spaces Comments"
+msgstr ""
+
+#. Author of the plugin
+msgid "Spaces TH Köln"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "spaces.th-koeln.de"
+msgstr ""
+
+#: spaces-comments.php:170
+msgid "Your comment"
+msgstr ""

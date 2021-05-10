@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Spaces Comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-10 07:33+0000\n"
+"PO-Revision-Date: 2021-05-10 07:46+0000\n"
+"Last-Translator: Hans Admin\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.1\n"
+"X-Domain: spaces-comments"
+
+#: spaces-comments.php:176
+msgid "Add a new comment"
+msgstr "Füge einen neuen Kommentar hinzu"
+
+#: spaces-comments.php:171
+msgid "at"
+msgstr "um"
+
+#: spaces-comments.php:177
+msgid "Comment has been deleted"
+msgstr "Kommentar wurde gelöscht"
+
+#. Description of the plugin
+msgid "Create a new comment with reply-function."
+msgstr ""
+"Erzeuge einen neuen Kommentar mit Antwort auf einen Kommentar Funktion."
+
+#: spaces-comments.php:169
+msgid "Delete comment"
+msgstr "Kommentar löschen"
+
+#: spaces-comments.php:166
+msgid "Do you really want to delete this comment?"
+msgstr "Willst du diesen Kommentar wirklich löschen?"
+
+#: spaces-comments.php:167
+msgid "Edit comment"
+msgstr "Kommentar editieren"
+
+#: spaces-comments.php:174
+msgid "Go to profile of"
+msgstr "Gehe zu Profil von"
+
+#: spaces-comments.php:173
+msgid "profile"
+msgstr "Profil"
+
+#: spaces-comments.php:172
+msgid "Reply"
+msgstr "Antworten"
+
+#: spaces-comments.php:168
+msgid "Reply to comment"
+msgstr "Kommentar beantworten"
+
+#: spaces-comments.php:175
+msgid "Show posts in this Space"
+msgstr "Zeige Beiträge in diesem Space"
+
+#. Name of the plugin
+msgid "Spaces Comments"
+msgstr "Spaces Kommentare"
+
+#. Author of the plugin
+msgid "Spaces TH Köln"
+msgstr "Spaces TH Köln"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "spaces.th-koeln.de"
+msgstr "spaces.th-koeln.de"
+
+#: spaces-comments.php:170
+msgid "Your comment"
+msgstr "Dein Kommentar"

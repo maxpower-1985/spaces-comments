@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Spaces – Comments
+ * Plugin Name: Spaces Comments
  * Plugin URI: spaces.th-koeln.de
  * Description: Create a new comment with reply-function.
  * The Plugin creates a new way for posting comments by adding
@@ -9,7 +9,8 @@
  * Author: Spaces TH Köln
  * Author URI: spaces.th-koeln.de
  * Version: 1.0
- * Text Domain: spaces-comments-domain
+ * Network: true
+ * Text Domain: spaces-comments
  * Domain Path: /languages
  * @package WordPress
  * @subpackage defaultspace
@@ -25,9 +26,9 @@ function spaces_comments_activate(){
 register_activation_hook(__FILE__, 'spaces_comments_activate');
 ?>
 <?php
-add_action( 'wp_enqueue_scripts', 'vue_comments_scripts_styles' );
 /**
- * Undocumented function
+ * Check if comment editor ist active and load vue dependencies
+ * Only loads scripts if comment section is open and theme is defaultspace or childtheme
  *
  * @return void
  */
@@ -49,7 +50,9 @@ function vue_comments_scripts_styles() {
 	}
 }
 }
-
+add_action( 'wp_enqueue_scripts', 'vue_comments_scripts_styles' );
+?>
+<?php
 /**
  * Converts php DateTime format to Javascript Moment format.
  *
@@ -143,7 +146,6 @@ function get_current_user_infos() {
 }
 ?>
 <?php
-add_action( 'wp_enqueue_scripts', 'register_scripts' );
 /**
  * Register all dependencies
  *
@@ -153,9 +155,9 @@ function register_scripts() {
 	wp_register_script( 'vue-comments_user', '', 'vue-comments', 1.0, false );
 	wp_register_script( 'vue_comments_post', '', 'vue-comments', 1.0, false );
 }
+add_action( 'wp_enqueue_scripts', 'register_scripts' );
 ?>
 <?php
-add_action( 'wp_enqueue_scripts', 'enqueue_vue_comments_user' );
 /**
  * Create window variables commentUser and commentTranslate for the frontend
  *
@@ -192,9 +194,9 @@ function enqueue_vue_comments_user() {
 		wp_add_inline_script( 'vue-comments_user', $comment_user, 'after' );
 	}
 }
+add_action( 'wp_enqueue_scripts', 'enqueue_vue_comments_user' );
 ?>
 <?php
-add_action( 'wp_enqueue_scripts', 'enqueue_vue_comments_post' );
 /**
  * Create the window variable commentPost for the frontend
  *
@@ -214,7 +216,9 @@ function enqueue_vue_comments_post() {
 		wp_add_inline_script( 'vue-comments_user', $comment_post, 'after' );
 	}
 }
-add_action( 'rest_api_init', 'add_custom_field_display_name_to_comment' );
+add_action( 'wp_enqueue_scripts', 'enqueue_vue_comments_post' );
+?>
+<?php
 /**
  * Add custom field display_name to comment
  *
@@ -231,7 +235,9 @@ function add_custom_field_display_name_to_comment() {
 		)
 	);
 }
-
+add_action( 'rest_api_init', 'add_custom_field_display_name_to_comment' );
+?>
+<?php
 /**
  * Get the user display_name
  *
