@@ -500,5 +500,5 @@ export default {
 };
 </script>
 <style lang="css">
-@import "css/style.css";
+@import "../css/style.css";
 </style>

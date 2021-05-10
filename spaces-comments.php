@@ -1,15 +1,16 @@
 <?php
 /**
- * Plugin Name: Space – Comments
+ * Plugin Name: Spaces – Comments
  * Plugin URI: spaces.th-koeln.de
  * Description: Create a new comment with reply-function.
  * The Plugin creates a new way for posting comments by adding
  * a reply function and some overall improvements.
  * Works best with the spaces editor.
- * Author: Spaces TH Köln - Michael Lenhart
+ * Author: Spaces TH Köln
+ * Author URI: spaces.th-koeln.de
  * Version: 1.0
  * Text Domain: spaces-comments-domain
- * Author URI: spaces.th-koeln.de
+ * Domain Path: /languages
  * @package WordPress
  * @subpackage defaultspace
  * TODO:
@@ -41,7 +42,7 @@ function vue_comments_scripts_styles() {
 			$comment_editor = 'false';
 		}
 			wp_enqueue_script( 'vuejs', 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js', array(), '2.6.11', false );
-			$file = 'inc/js/post-comment-section.min.js';
+			$file = 'build/public/js/post-comment-section.min.js';
 			$time = filemtime( dirname( __DIR__ ) . '' . $file );
 			wp_enqueue_script( 'vue-comments', $plugin_path . $file, array(), $time, false );
 			wp_localize_script( 'vue-comments', 'commentEditor', $comment_editor );

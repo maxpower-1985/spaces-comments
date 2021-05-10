@@ -79,7 +79,7 @@
               class="comment-excerpt-video"
             >
               <figure class="video">
-                <img src="./assets/play_video.png" />
+                <img src="../img/play_video.png" />
               </figure>
             </div>
           </div>

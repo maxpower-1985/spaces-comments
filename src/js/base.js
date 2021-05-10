@@ -14,5 +14,5 @@ Vue.use(VueMoment, {
 window.bus = new Vue();
 /* Create global window-object commentSection */
 window.commentSection = new Vue({
-	render: h => h(require('./post-comment-section.vue').default),
+	render: h => h(require('../vue/post-comment-section.vue').default),
 });

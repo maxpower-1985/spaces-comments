@@ -16,14 +16,14 @@ var defaults = {
 		extensions: ['.ts', '.js', '.vue', '.json']
 	},
 	entry: {
-		'post-comment-section': ['./src/base.js']
+		'post-comment-section': ['./src/js/base.js']
 		//some_foo: ['./src/some-test-foo.vue']
 	},
 	output: {
-		path: __dirname + "/dist",
+		path: __dirname + "/build/public/js",
 		filename: "[name].js"
 	},
-	mode: 'development',
+	mode: 'production',
 	//mode: 'production',
 	externals: {
 		vue: "Vue"
@@ -58,8 +58,8 @@ var defaults = {
 						loader: 'file-loader',
 						options: {
 							name: '[name].[ext]',
-							outputPath: '../../../plugins/spaces-comments/inc/img/',
-							publicPath: '/app/plugins/spaces-comments/inc/img/',
+							outputPath: '../img/',
+							publicPath: '/app/plugins/spaces-comments/build/public/img/',
 							esModule: false,
 						}
 					}
